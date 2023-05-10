@@ -1,4 +1,6 @@
 import math
+from machine import Pin
+
 
 multi = 0
 def factorial(numero):
@@ -39,9 +41,13 @@ def calcular_pi(k):
     pi = 3 * (1 + suma)
     return pi
 
+led = Pin("LED", Pin.OUT)
+led.value(1)
+
 for i in range(1,17):
     print(i, calcular_pi(i),"(",multi,")")
     multi = 0
 
 print("  ",math.pi)
 
+led.value(0)
