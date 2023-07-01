@@ -9,8 +9,8 @@ rgb = RGBLED(red = 2, green = 3, blue = 4)
 rgb.color = (0,255,255)
 sleep(1)
 
-ssid =  'intermg'
-password =  'lauracamila3'
+ssid =  ''
+password =  ''
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)

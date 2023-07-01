@@ -5,7 +5,7 @@ import math
 
 DEFAULT_I2C_ADDR = 0x27                         # LCD 1602 I2C address
                                                 # If 0x27 doesn't respond then 0x3f is used
-i2c = I2C(0,sda=Pin(0),scl=Pin(1),freq=400000) 
+i2c = I2C(0,sda=Pin(4),scl=Pin(5),freq=400000) 
 lcd = I2cLcd(i2c, DEFAULT_I2C_ADDR,2, 26)      # Initialize(device address, backlight settings)
 
 

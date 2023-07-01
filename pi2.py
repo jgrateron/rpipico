@@ -28,7 +28,7 @@ def calcular_pi(k):
     pi = 3 * (1 + suma)
     return pi
 
-print(calcular_pi(10))
+print(calcular_pi(21))
 
 print(math.pi)
 
